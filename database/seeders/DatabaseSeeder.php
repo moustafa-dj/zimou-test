@@ -26,7 +26,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             DeliveryTypeSeeder::class,
             StatusSeeder::class,
-            StoreSeeder::class
+            WilayaCommuneSeeder::class,
+            StoreSeeder::class,
         ]);
     }
 }
