@@ -10,9 +10,9 @@ use Maatwebsite\Excel\Facades\Excel;
 class PackageRepository extends BaseRepository implements PackageContract
 {
 
-    public function __construct(Package $package)
+    public function __construct(Package $model)
     {
-        $this->model = $package;
+        parent::__construct($model);
     }
     
     public function exportList()
